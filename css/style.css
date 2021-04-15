@@ -1,0 +1,319 @@
+
+/* ==================================================== */
+/* SIDEBAR */
+/* =================================================== */
+
+#sidebar-wrapper {
+    z-index: 1;
+    position: fixed;
+    left: -500px;
+    width: 250px;
+    height: 100%;
+    transform: translateX(250px);
+    overflow-y: auto;
+    background: #343a40;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+ 
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ 
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+ 
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999;
+    font-family: 'Lucida Sans Unicode', 'Lucida Sans Regular';
+}
+ 
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+ 
+.sidebar-nav > .sidebar-brand {
+    height: 55px;
+    font-size: 18px;
+    line-height: 55px;
+}
+ 
+.sidebar-nav > .sidebar-brand a {
+    color: #999;
+}
+ 
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+ 
+#menu-toggle {
+    z-index: 1;
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+    margin: 10px;
+    padding: 0;
+}
+ 
+#sidebar-wrapper.active {
+    left: -250px;
+    width: 250px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+ 
+.toggle {
+    margin: 5px 5px 0 0;
+}
+
+#close-menu {
+    position: absolute;
+    right: 0;
+}
+.square { 
+  padding: 8px; 
+  display: block; 
+  margin:12px; 
+}
+
+.wl a {
+    width: 100%;
+    height: 100%;
+ color: #91a9cf; 
+ padding: 0;
+}
+
+/* SIDEBAR END */
+
+/* ==================================================== */
+/* NAVBAR */
+/* =================================================== */
+
+.navbar {
+    padding: 0;
+    display: flex;
+    justify-content: start;
+}
+
+.navbar-brand {
+    padding: 0;
+    margin: 0;
+    padding-left: 10px;
+    font-family: 'Lucida Sans Unicode', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+
+
+/* NAVBAR END */
+
+/* ==================================================== */
+/* SEARCH */
+/* =================================================== */
+
+
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.searchTerm {
+    width: 100%;
+    border: 3px solid #00B4CC;
+    border-right: none;
+    padding: 5px;
+    height: 36px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+.searchTerm:focus {
+    color: #00B4CC;
+}
+
+.searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+/*Resize the wrap to see the search bar change!*/
+
+.search__wrap {
+    width: 30%;
+    position: absolute;
+    top: 23%;
+    left: 83%;
+    transform: translate(-50%, -50%);
+}
+
+/* SEARCH END */
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    /* justify-content: center; */
+}
+
+.card{
+    /* padding: 50px 10px; */
+    box-sizing: border-box;
+    /* text-align: center; */
+    width: calc(100% / 12 * 2 - 30px);
+    margin: 15px;
+    border-radius: 10px;
+    max-height: 280px;
+}
+
+.card .card__img{
+    max-height: max-content;
+}
+.card .card__img img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 100%;
+    max-height: max-content;
+}
+
+.centre img{
+    width: 100%;
+    /* height: 200px; */
+}
+.centre{
+    text-align: center;
+}
+
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+}
+
+
+
+/*По надобности дописую промежуточные разрешения, если вдруг по дизайну что то падает на 650px, тогда дописую:*/
+
+@media (max-width: 650) {
+
+} 
+
+
+
+
+
+
+
+
+/* ===================== */
+/* MEDIA QUERIES */
+/* ===================== */
+
+/* Portrait tablets and small desktops */
+@media (min-width: 721px) and (max-width: 991px) {
+    .container{
+        max-width: 991px;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+    
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+        /* justify-content: center; */
+    }
+    
+    .card{
+        /* padding: 50px 10px; */
+        box-sizing: border-box;
+        text-align: center;
+        width: calc(100% / 12 * 3 - 30px);
+        margin: 15px;
+        /* min-width: calc(150px - 60px); */
+        
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 721px) {
+    .card{
+        /* padding: 50px 10px; */
+        box-sizing: border-box;
+        text-align: center;
+        width: calc(100% / 12 * 4 - 30px);
+        margin: 15px;
+        min-width: calc(150px - 60px);
+    }
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+   
+    .card{
+        /* padding: 50px 10px; */
+        box-sizing: border-box;
+        text-align: center;
+        width: calc(100% / 12 * 6 - 30px);
+        margin: 15px;
+        min-width: calc(150px - 60px);
+    }
+}
+
+@media (max-width: 285px){
+    .row{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .search__wrap {
+        width: 50%;
+        position: absolute;
+        top: 23%;
+        left: 72%;
+        transform: translate(-50%, -50%);
+    }
+}
+/* END MEDIA QUERIES */

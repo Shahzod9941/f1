@@ -290,13 +290,25 @@
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
+    .container{
+        max-width: 991px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+        /* justify-content: center; */
+    }
    
     .card{
         /* padding: 50px 10px; */
         box-sizing: border-box;
         text-align: center;
-        width: calc(100% / 12 * 6 - 30px);
-        margin: 15px;
+        width: calc(100% / 12 * 6 - 10px);
+        margin: 5px;
         min-width: calc(150px - 60px);
     }
 }
